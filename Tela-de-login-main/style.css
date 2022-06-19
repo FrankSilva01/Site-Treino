@@ -1,0 +1,290 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:white;
+}
+
+body {
+    background-color: rgb(22, 136, 129); 
+    width: 1200px;
+}
+
+input {
+    text-align: center;
+    border: 1.8px solid black;
+    color: white;
+    background-color: rgba(22, 43, 22, 0.185);
+    width: 250px;
+    height: 50px;
+    position: relative;
+    left: -20px;
+}
+
+#senha {
+    
+    position: relative;
+    left: -15px;
+}
+
+label {
+
+    position: relative;
+    right: 22px;
+
+}
+
+/* Frase do lado Esquerdo */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    width: 450px;
+    position: relative;
+    left: 70.5%;
+    top: 50px;
+}
+
+/* Login Header */
+
+h2 {
+
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+}
+
+/*  Modificação dos links */
+
+a {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+/* Botão voltar */
+
+.voltar {
+
+    font-family: 'Poppins', sans-serif;
+    margin-left: 70px;
+    position: relative;
+    top: 60px;
+
+}
+
+#voltar{
+
+    font-size: 35px;
+    margin-left: 100px;
+    margin-bottom: -80px;
+    position: relative;
+    top: 30px;
+    left: 60px;
+
+}
+
+/* Parte esquerda */
+
+.esquerda {
+
+    position: relative;
+    top: 150px;
+    left: 20%;
+    text-align: center;
+    width: 50%;
+
+}
+
+/* Parte direita */
+
+.direita {
+
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+    margin-left: 100%;
+    text-align: right;
+    width: 450px;
+
+}
+
+/* Imagem */
+
+.imagem {
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 280px;
+    position: relative;
+    top: 60px;
+    left: 520px;
+
+}
+
+/* Container da parte direita */
+
+.login {
+
+    color: black;
+    position: relative;
+    bottom: 320px;
+    text-align: center;
+    background-color: rgba(144, 238, 144, 0.285);
+    width: 500px;
+    height: 500px;
+    padding-top: 40px;
+    margin: 5px;
+    border-radius: 50px;
+    box-shadow: 5px 4px 3px rgb(65, 104, 116); 
+
+}
+
+/* Botao de login */
+
+.botao {
+
+    font-weight:700;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(11, 143, 134);
+    text-align: center;
+    width: 250px;
+    height: 1rem;
+    padding: 50px;
+    margin-top: 10px;
+    margin-left: 120px;
+    border-radius: 40px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 0.5px 1.5px solid black;
+    box-shadow: 5px 4px 3px rgb(2, 68, 90);;
+}
+
+.botao:hover {
+
+    color: lightgreen;
+    /* box-shadow: 5px 4px 3px rgb(7, 20, 24); */
+    background-color: black;
+} 
+
+/* área do cadastro */
+
+.cadastro {
+
+    color: black;
+    font-size: 14px;
+    width: 200px;
+    text-decoration: none;
+    position: relative;
+    left: 30px;
+    top: 28px;
+    transition: transform 0.5s;
+}
+
+
+.cadastro:hover {
+    z-index:9999;
+    transform: scale(1.20);
+   
+}
+    
+.cadastro:after {
+
+    transform: scale(0.50);
+
+}
+
+/* área do recuperar acesso */
+
+.recuperar-conta {
+    
+    color: black;
+    font-size: 14px;
+    width: 220px;
+    text-decoration: none;
+    margin-left: 9vw;
+    position: relative;
+    bottom: -6px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+
+.recuperar-conta:hover {
+    z-index:9999;
+    transform: scale(1.20);
+   
+}
+    
+.recuperar-conta:after {
+
+    transform: scale(0.50);
+
+}
+
+
+/* Botao de login google */
+
+.g-signin2 {
+
+
+    outline: none;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 190px;
+    color: red;
+}
+
+#aumenta {
+
+    display: flex;
+    flex-direction: row;
+    
+    text-align: center;
+    width: 150px;
+    height:150px;
+    font-size: 95px;
+    color: black;
+    background-color: lightblue;
+    border-radius: 50px;
+}
+
+#diminui {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 150px;
+    height:150px;
+    font-size: 95px;
+    color: black;
+    background-color: lightblue;
+    border-radius: 50px;
+}
+
+#reseta {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 150px;
+    height:150px;
+    font-size: 95px;
+    color: black;
+    background-color: lightblue;
+    border-radius: 50px;
+}
+
+#numero {
+
+    font-size: 30px;
+
+}

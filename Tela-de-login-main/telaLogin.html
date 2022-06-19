@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="998899405344-gh6ukfc1259e5bopnlpmnvistlei04it.apps.googleusercontent.com">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap');
+    </style> 
+
+    <title>Tela Inicial</title>
+</head>
+<body>
+
+
+     <!-- Botão para voltar -->
+
+     <p id="voltar"> Voltar</p></a>
+        <div class="voltar"> 
+        
+        <a href="../index.html">   
+        <img src="https://img.icons8.com/flat-round/344/circled-left-2--v1.png" 
+        width="60px" height="60px">
+    </a>
+
+    </div>
+
+
+    <!-- Parte ESQUERDA do Layout -->
+
+        <div class="esquerda">
+
+        <h1>Faça login! <br> Encontre o seu sonho!</h1>
+        <img class="imagem" src="img/Humaaans - Space.png"> 
+        <!-- <img class="imagem" src="./img/5fe1d2f5cc3e6faced4751c7_16.png"> -->
+
+    </div>
+
+    <!-- Parte Direita do Layout -->
+
+    <div class="direita">
+
+        <section class="login">
+
+            <h2>Login</h2><br>
+
+                 <label for="nome">Usuario</label>
+                 <input placeholder="Digite seu login" type="text" id="nome" minlength="8" maxlength="15" >
+               
+
+                 <br> <br> <label for="senha" id="senha">Senha </label>
+                <input placeholder="Digite sua senha" type="password" id="senha" minlength="8" maxlength="15" >
+
+        
+
+                <div class="botao" >
+                    Entrar
+                </div>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+                <div class="cadastro"> Não tem conta? <a href="#" >Crie agora</a></div>
+                <div class="recuperar-conta">Esqueceu a senha? <a href="#">Clique aqui</a></div>
+
+
+        </section>
+
+    </div>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="./index.js"></script>
+
+
+</body>
+</html>

@@ -14,7 +14,6 @@ body {
 }
 
 h1 {
-
     font-family: 'Poppins';
     font-weight: normal;
     color: #fff;
@@ -28,12 +27,10 @@ h1 {
 }
 
 h2 {
-    margin-top: 560px;
-   
+    margin-top: 560px; 
 }
 
 p {
-
     font-family: 'Poppins';
     font-weight: 700;
     width: 440px;
@@ -45,6 +42,11 @@ p {
     bottom: 520px;
 }
 
+/* Teste para deixar uma palavra destacada */
+#fraseDestaque {
+    font-weight: bold;
+    color: rgb(74, 203, 246);
+}
 
 #menu a {
     color: #fff;
@@ -55,11 +57,11 @@ p {
    box-shadow: rgb(16, 92, 57);
 }
 
+/* Estilização do cabeçalho aonde fica o menu  */
 #menu {
-    
     position: relative;
     bottom: 10px;
-    width: 211.5%;
+    width: 168.5%;
     height: 150px;
     padding: 20px;
     margin-top:10px;
@@ -67,8 +69,8 @@ p {
     color: white;
 }
 
+/* Texto do menu / Inicio, Contato e etc */
 .menu-texto {
-
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     display: flex;
@@ -80,10 +82,18 @@ p {
     text-align: center;
     position: relative;
     top: 0px;
+    
 }
 
-.login {
+ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
 
+/* Fim menu texto */
+
+/* Botão de login */
+.login {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -97,12 +107,10 @@ p {
     bottom: 116px;
     left: 178%;
     box-shadow: 8px 0px 15px rgb(48, 71, 60) ;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
 .login a:hover {
-
     background-color: white;
     color: black;
     box-shadow: none; 
@@ -113,15 +121,15 @@ p {
 }
 
 .login:hover {
-
     background-color: white;
     outline: 1 solid ;
     color: black;
     box-shadow: none; 
 }
+/* Fim do botão de login */
 
+/* Botão de cadastro */
 .cadastro {
-
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: black;
@@ -143,35 +151,26 @@ p {
     background-color: rgb(54, 177, 119);
     color: white;
 }
+/* Fim botão cadastro */
 
-ul li {
-
-    display: inline-block;
-    padding-left: 10px;
-
-}
-
+/* Logo */
 .logo {
-
     width: 150px;
     height: 150px;
     z-index: 8000;
     position: relative;
     top: -320px;
     left: 110px;
-
 }
 
+/* Slideshow  */
 #banner {
-
     margin-left: 0.5%;
     margin-top: -10px;
     text-align: center;
-
 }
 
 #banner {
-   
     display: flex;
     flex-direction: row;
     background-color:white;
@@ -180,27 +179,23 @@ ul li {
     max-width: 950px;
     width: 895px;
     height: 600px;
-    left: 76%;
+    left: 56%;
     top: 80px;
     overflow: hidden;
     box-shadow: 20px 20px 20px rgb(26, 113, 77);
     border-radius: 15px;
     z-index: 5000;
     overflow: hidden;
-
 }
 
-
+/* Imagens do slideshow */
 #imagem {
-
     width: 900px;
     height: 600px;
-
 }
 
- 
+ /*Botão direito para trocar de imagem do slideshow  */
 #direito {
-
     z-index: 9000;
     position: relative;
     left: 61.8vw;
@@ -208,8 +203,8 @@ ul li {
     cursor: pointer;
 }
 
+/*Botão esquerdo para trocar de imagem do slideshow  */
 #esquerdo {
-
     z-index: 9000;
     position: relative;
     left:33.9vw;
@@ -217,14 +212,12 @@ ul li {
     cursor: pointer;
 } 
 
-
+/* H1 da página - Slogan */
 .slogan {
-   
     font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    font-size: 65px;
-    color: #fff;
     font-weight: bold;
+    font-size: 65px;
+    color: #fff;   
     display:flex;
     text-align: center;
     padding: 10px;
@@ -233,34 +226,30 @@ ul li {
     margin-top: -170px;
     margin-bottom: 50px;
     width: 100%;
- 
 }
 
-
+/* Botão no canto inferior direito para voltar ao topo da página */
 #inicio {
-
     z-index: 9999;
     position:fixed;
     left: 95vw;
     bottom: 50px;
-
 }
 
+/* Container contendo todos os carros */
 #catalogo {
-   
     display:flex;
     text-align: center;
     padding: 15px;
     position: relative;
-    left: 520px;
+    left: 220px;
     margin-top: 100px;
     margin-bottom: 50px;
-    width: 100%;
- 
+    width: 60%;
 }
 
+/* Container contendo todas as imagens dos carros */
 .carros {
-
     display: flex;
     flex-direction:row;  
     margin-top: 15px;
@@ -273,17 +262,15 @@ ul li {
 .carros:hover {
     z-index:9999;
     transform: scale(1.30);
-   
 }
     
 .carros:after {
-
     transform: scale(0.50);
-
 }
+/* Fim do carros */
 
+/* Botão de compra abaixo das imagens dos carros */
 .botao {
-
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 16px;
@@ -296,11 +283,10 @@ ul li {
     top: 375px;
     right: 280px;
     cursor: pointer;
-
 }
 
+/* Barra de pesquisa */
 .pesquisa {
-
     background-color: rgb(22, 136, 129);
     box-shadow: 20px 20px 20px rgb(26, 113, 77);
     text-align: center;
@@ -314,8 +300,8 @@ ul li {
     border-radius: 50px 50px 50px;
 }
 
+/* Botão para pesquisar */
 .pesquisa button {
-
     font-family: 'Poppins';
     font-weight: normal;
     font-size: 18px;
@@ -332,6 +318,7 @@ ul li {
     cursor: pointer;
 }
 
+/* Input da barra de pesquisa */
 input {
     font-family: 'Poppins';
     font-weight: normal;
@@ -343,8 +330,8 @@ input {
     right: 10px;
 }
 
+/* Container do quem somos */
 #sobre_nos {
-    
     color: white;
     text-align: right;
     background: rgb(22, 136, 129);
@@ -358,24 +345,22 @@ input {
     border-radius: 50px 20px;
 }
 
+/* Imagem do container */
 #sobre_nos img {
-
     position: relative;
     top: -40px;
     right: 520px;
     border-radius: 50px 20px;
- 
 }
 
+/* Título do quem somos */
 #sobre_nos h3 {
-
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     position: relative;
     right: 120px;
     top: 25px;
     font-size: 45px;
-
 }
 
 /* .recursos {
@@ -398,40 +383,38 @@ input {
     margin-left: 0vw;
 } */
 
+/* Formulário de contato */
 #contato {
-
     width: 650px;
     height:500px;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 580px;
-
+    left: 380px;
 }
 
-#contato label {
-
+/* Nome de cada input */
+#contato label 
+{
     font-family: 'Poppins';
     font-weight: normal;
     position: relative;
     top: 174px;
     left: 710px;
-
 }
 
+/* Título da área de contato */
 #contato h3 {
-
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 35px;
     position: relative;
     left: 790px;
     top: 100px;
-
 }
 
+/* Input do formulário */
 #contato input {
-  
         font-family: 'Poppins';
         font-weight: normal;
         padding: 20px;
@@ -440,11 +423,10 @@ input {
         position: relative;
         top: 135px;
         left: 800px;
-    
 }
 
+/* Botão para enviar */
 #contato #enviar {
-
     font-family: 'Poppins';
     font-weight: normal;
     font-size: 20px;
@@ -460,13 +442,11 @@ input {
     left: 930px;
     box-shadow: 8px 0px 15px rgb(48, 71, 60) ;
     cursor: pointer;
-
 }
 
 
-
+/* Mensagem que aparece após clicar em enviar agradecendo pelo contato */
 #mensagem {
-
     font-family: 'Poppins';
     font-weight: normal;
     color: #fff;
@@ -476,18 +456,18 @@ input {
     margin-top: 45px;
 }
 
+/* Container do rodapé */
 #footer { 
-
     color: white;
     margin-top: 236px;
     margin-bottom: 10px;
     margin-left: 5px;
     padding: 5%;
-    width: 210.8%;
+    width: 168.8%;
     background-color: black; 
-
 }
 
+/* Texto do Rodapé */
 .rodape {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -496,4 +476,1781 @@ input {
     top: 10px;
     text-align: center;
     left: 1300px;
+    }
+
+    /* RESPONSIVIDADE */
+
+    /* Telas Pequenas */
+    @media (min-width: 576px) {
+
+        body{
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 576px;
+        }
+
+       .logo {  
+        visibility: hidden;
+       }
+            #banner {
+                visibility: hidden;
+                    }
+
+            .botoes {
+                visibility: hidden;
+            }
+
+            #menu {
+                width: 550px;
+                font-size: 10px;
+                text-align: left;
+        
+             }
+
+             #slogan {
+                position: relative;
+                bottom: 30px;
+                left:  70px;
+                width: 550px;
+                text-align:left;
+                font-size: 40px;
+             }
+
+             #pesquisa {
+                width: 450px;
+                height: 50px;
+                position: relative;
+                left: 30px;
+                top: -700px;
+            }
+
+            input {
+                width: 300px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 160px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 350px;
+                height: 350px;
+                display: inline-block;     
+                position: relative;
+                padding: 10px;
+                margin: 10px;
+                bottom: 650px;
+                left: 90px;        
+            }
+
+            .carros {
+                width: 150px;
+                height: 350px;
+                margin: 80px;
+                position: relative;
+                left: -140px;
+            }
+
+           .carros #botao{
+                width: 120px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                visibility: hidden;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 700px;
+                left: -180px;
+            }
+
+            #sobre_nos {
+                width: 500px;
+                height: 520px;
+                position: relative;
+                bottom: 600px;
+                left: 30px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -340px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 480px;
+                height: 260px;
+                left: 10px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 80px;
+            }
+
+            #contato {
+                width: 480px;
+                height: 260px;
+                position: relative;
+                top: 240px;
+                left: 80px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 200px;
+                position: relative;
+                top: -600px;
+                left: 120px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: 20px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 110px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 550px;
+                height: 200px;
+            }
+
+            #rodape {
+                width: 400px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                left: 50px;
+            }
+
+    }
+
+    @media (max-width: 767.98px){
+
+        body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 576px;
+            height: 576px;
+            }
+    
+           .logo {  
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -316px;
+            left: -90px;
+           }
+                #banner {
+                    visibility: hidden;
+                        }
+    
+                .botoes {
+                    visibility: hidden;
+                }
+    
+             #menu {
+                width: 750px;
+                font-size: 5px;
+                position: relative;
+                left: -55px;
+                text-align: left;
+        
+             }
+
+            .menu-texto {
+                font-size: 25px;
+                position: relative;
+                top: 10px;
+                left: 20px;
+            }             
+
+             #slogan {
+                position: relative;
+                bottom: 30px;
+                left:  120px;
+                width: 550px;
+                text-align:left;
+                font-size: 40px;
+             }
+    
+            #pesquisa {
+                width: 450px;
+                height: 50px;
+                position: relative;
+                left: 60px;
+                top: -700px;
+            }
+
+            input {
+                width: 300px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 160px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 350px;
+                height: 350px;
+                display: inline-block;     
+                position: relative;
+                padding: 10px;
+                margin: 10px;
+                bottom: 650px;
+                left: 130px;        
+            }
+
+            .carros {
+                width: 150px;
+                height: 350px;
+                margin: 80px;
+                position: relative;
+                left: -140px;
+            }
+
+           .carros #botao{
+                width: 120px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                visibility: hidden;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 700px;
+                left: -180px;
+            }
+
+            #sobre_nos {
+                width: 500px;
+                height: 520px;
+                position: relative;
+                bottom: 600px;
+                left: 60px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -340px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 480px;
+                height: 260px;
+                left: 10px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 80px;
+            }
+
+            #contato {
+                width: 480px;
+                height: 260px;
+                position: relative;
+                top: 240px;
+                left: 100px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 300px;
+                position: relative;
+                top: -600px;
+                left: 100px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: -10px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 110px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 760px;
+                height: 200px;
+                position: relative;
+                left: -90px;
+            }
+
+            #rodape {
+                width: 600px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                left: 60px;
+            }
+    }
+
+    @media (max-width: 575.98px ) and (max-width: 767.98px){
+
+        body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 576px;
+            height: 576px;
+            }
+    
+           .logo {  
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -350px;
+            left: -10px;
+           }
+                #banner {
+                    visibility: hidden;
+                        }
+    
+                .botoes {
+                    visibility: hidden;
+                }
+    
+             #menu {
+                width: 550px;
+                font-size: 10px;
+                text-align: left;
+        
+             }
+
+            .menu-texto {
+                position: relative;
+                left: 40px;
+            }             
+
+             #slogan {
+                position: relative;
+                bottom: 30px;
+                left:  70px;
+                width: 550px;
+                text-align:left;
+                font-size: 40px;
+             }
+    
+            #pesquisa {
+                width: 450px;
+                height: 50px;
+                position: relative;
+                left: 30px;
+                top: -700px;
+            }
+
+            input {
+                width: 300px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 160px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 350px;
+                height: 350px;
+                display: inline-block;     
+                position: relative;
+                padding: 10px;
+                margin: 10px;
+                bottom: 650px;
+                left: 90px;        
+            }
+
+            .carros {
+                width: 150px;
+                height: 350px;
+                margin: 80px;
+                position: relative;
+                left: -140px;
+            }
+
+           .carros #botao{
+                width: 120px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                visibility: hidden;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 700px;
+                left: -180px;
+            }
+
+            #sobre_nos {
+                width: 500px;
+                height: 520px;
+                position: relative;
+                bottom: 600px;
+                left: 30px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -340px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 480px;
+                height: 260px;
+                left: 10px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 80px;
+            }
+
+            #contato {
+                width: 480px;
+                height: 260px;
+                position: relative;
+                top: 240px;
+                left: 80px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 200px;
+                position: relative;
+                top: -600px;
+                left: 120px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: 20px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 110px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 550px;
+                height: 200px;
+            }
+
+            #rodape {
+                width: 400px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+               
+                left: 50px;
+            }
+    }
+
+ /* Telas Médias */
+    @media (min-width: 768px) {
+        body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 850px;
+            height: 406px;
+            }
+    
+           .logo {  
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -316px;
+            left: -20px;
+           }
+                #banner {
+                    visibility: hidden;
+                        }
+    
+                .botoes {
+                    visibility: hidden;
+                }
+    
+             #menu {
+                width: 100%;
+                font-size: 5px;
+                position: relative;
+                left: 14px;
+                text-align: left;
+        
+             }
+
+            .menu-texto {
+                position: relative;
+                left: 30px;
+            }             
+
+             #slogan {
+                position: relative;
+                bottom: -30px;
+                left:  185px;
+                width: 550px;
+                text-align:left;
+                font-size: 50px;
+             }
+    
+            #pesquisa {
+                width: 550px;
+                height: 40px;
+                position: relative;
+                left: 145px;
+                top: -650px;
+                z-index: 99999;
+            }
+
+            input {
+                width: 400px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 205px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 450px;
+                height: 350px;
+                display: inline-block;     
+                position: relative;
+                padding: 10px;
+                margin: 10px;
+                bottom: 650px;
+                left: 250px;        
+            }
+
+            .carros {
+                width: 150px;
+                height: 350px;
+                margin: 80px;
+                position: relative;
+                left: -140px;
+            }
+
+           .carros #botao{
+                width: 120px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                position: fixed;
+                width: 30px;
+                left: 755px;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 700px;
+                left: -230px;
+            }
+
+            #sobre_nos {
+                width: 550px;
+                height: 520px;
+                position: relative;
+                bottom: 600px;
+                left: 160px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -385px;
+                top: -100px;
+            }
+
+            #sobre_nos p {
+                width: 480px;
+                height: 260px;
+                left: 10px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 80px;
+            }
+
+            #contato {
+                width: 480px;
+                height: 260px;
+                position: relative;
+                top: 220px;
+                left: 240px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 350px;
+                position: relative;
+                top: -600px;
+                left: 60px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: -30px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 130px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 960px;
+                height: 300px;
+                position: relative;
+                left: -20px;
+            }
+
+            #rodape {
+                width: 600px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                top: 70px;
+                left: 150px;
+            }
+    }
+
+
+    @media (min-width: 768.98px) and (max-width: 991.98px) {
+        body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 950px;
+            height: 406px;
+            }
+    
+           .logo {  
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -316px;
+            left: -20px;
+           }
+                #banner {
+                    width: 450px;
+                    height:450px;
+                    position: relative;
+                    left: -800px;
+                        }
+    
+                .botoes {
+                    visibility: hidden;
+                }
+    
+             #menu {
+                width: 950px;
+                font-size: 10px;
+                position: relative;
+                left: 14px;
+                text-align: left;
+        
+             }
+
+            .menu-texto {
+                position: relative;
+                left: 30px;
+            }             
+
+             #slogan {
+                position: relative;
+                bottom: -30px;
+                left:  205px;
+                width: 550px;
+                text-align:left;
+                font-size: 50px;
+             }
+    
+            #pesquisa {
+                width: 750px;
+                height: 40px;
+                position: relative;
+                left: 65px;
+                top: -450px;
+                z-index: 99999;
+            }
+
+            input {
+                width: 600px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 305px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 390px;
+                height: 350px;
+                display: inline-block;
+                position: relative;
+                padding: 25px;
+                margin: 40px;
+                bottom: 470px;
+                left: 15px;        
+            }
+
+           #carros #botao{
+                width: 140px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                visibility: hidden;
+            
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 500px;
+                left: -250px;
+            }
+
+            #sobre_nos {
+                width: 850px;
+                height: 520px;
+                position: relative;
+                bottom: 340px;
+                left: 50px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -655px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 680px;
+                height: 260px;
+                left: 80px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 190px;
+            }
+
+            #contato {
+                width: 680px;
+                height: 260px;
+                position: relative;
+                top: 400px;
+                left: 280px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 350px;
+                position: relative;
+                top: -600px;
+                left: 60px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: -30px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 130px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 975px;
+                height: 300px;
+                position: relative;
+                left: -20px;
+            }
+
+            #rodape {
+                width: 700px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                top: 70px;
+                left: 150px;
+            }
+    }
+
+     @media (min-width: 992px) and (max-width: 1150px){
+
+         body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 992px;
+            height: 406px;
+            }
+    
+           .logo {  
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -266px;
+            left: -40px;
+           }
+                #banner {
+                    visibility: visible;
+                    width: 890px;
+                    height: 600px;
+                    left: 45px;
+                    top: -10px;
+                   
+                        }
+    
+                .botoes #esquerdo {
+                    visibility: visible;
+                    width: 80px;
+                    position: relative;
+                    left: -40px;
+                    bottom: 350px;
+                }
+
+                .botoes #direito {
+                    visibility: visible;
+                    width: 80px;
+                    position: relative;
+                    left: 865px;
+                    bottom: 350px;
+                }
+    
+             #menu {
+                width: 1250px;
+                font-size: 10px;
+                position: relative;
+                left: -55px;
+                text-align: left;
+        
+             }
+
+            #menu-texto {
+                position: relative;
+                left: -130px;
+            }            
+            
+            #cadastro {
+                visibility: visible;
+                font-size: 15px;
+                width: 139px;
+                height: 50px;
+                left: 880px;
+                top: -160px;
+                display: flex;
+                align-items: center;
+            }
+            #login {
+                visibility: visible;
+                font-size: 15px;
+                width: 100px;
+                height: 50px;
+                left: 765px;
+                top: -110px;
+                display: flex;
+                align-items: center;
+            }
+
+             #slogan {
+                position: relative;
+                bottom: -20px;
+                left:  225px;
+                width: 550px;
+                text-align:left;
+                font-size: 50px;
+             }
+    
+            #pesquisa {
+                width: 750px;
+                height: 40px;
+                position: relative;
+                left: 95px;
+                top: 30px;
+                z-index: 99999;
+            }
+
+            input {
+                width: 600px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 305px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 392px;
+                height: 350px;
+                display: inline-block;
+                position: relative;
+                padding: 25px;
+                margin: 40px;
+                bottom: 80px;
+                left: 10px;        
+            }
+
+
+           #carros #botao{
+                width: 140px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                
+                position: fixed;
+                width: 30px;
+                left: 1010px;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 50px;
+                left: -280px;
+            }
+
+            #sobre_nos {
+                width: 850px;
+                height: 520px;
+                position: relative;
+                bottom: 80px;
+                left: 70px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -655px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 680px;
+                height: 260px;
+                left: 80px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 190px;
+            }
+
+            #contato {
+                width: 680px;
+                height: 260px;
+                position: relative;
+                top: 650px;
+                left: 300px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 350px;
+                position: relative;
+                top: -600px;
+                left: 60px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: -30px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 130px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 1175px;
+                height: 300px;
+                position: relative;
+                left: -80px;
+                bottom: -250px;
+            }
+
+            #rodape {
+                width: 900px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                top: 50px;
+                left: 120px;
+            }
+        
+    }
+
+     /* Telas Notebooks */
+    @media (min-width: 1150.98px) {
+        body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 1150px;
+            height: 806px;
+            }
+    
+           .logo {  
+            width: 100px;
+            height: 50px;
+            position: relative;
+            top: -316px;
+            left: -60px;
+           }
+           #banner {
+            visibility: visible;
+            width: 890px;
+            height: 600px;
+            left: 45px;
+            top: -10px;
+           
+                }
+
+        .botoes #esquerdo {
+            visibility: visible;
+            width: 80px;
+            position: relative;
+            left: -40px;
+            bottom: 350px;
+        }
+
+        .botoes #direito {
+            visibility: visible;
+            width: 80px;
+            position: relative;
+            left: 865px;
+            bottom: 350px;
+        }
+
+     #menu {
+        width: 1250px;
+        font-size: 10px;
+        position: relative;
+        left: -55px;
+        text-align: left;
+
+     }
+
+    #menu-texto {
+        position: relative;
+        left: -130px;
+    }            
+    
+    #cadastro {
+        visibility: visible;
+        font-size: 15px;
+        width: 139px;
+        height: 50px;
+        left: 880px;
+        top: -160px;
+        display: flex;
+        align-items: center;
+    }
+    #login {
+        visibility: visible;
+        font-size: 15px;
+        width: 100px;
+        height: 50px;
+        left: 765px;
+        top: -110px;
+        display: flex;
+        align-items: center;
+    }
+
+
+             #slogan {
+                position: relative;
+                bottom: -30px;
+                left:  355px;
+                width: 550px;
+                text-align:left;
+                font-size: 50px;
+             }
+    
+            #pesquisa {
+                width: 750px;
+                height: 40px;
+                position: relative;
+                left: 195px;
+                top: -200px;
+                z-index: 99999;
+            }
+
+            input {
+                width: 600px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 305px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 392px;
+                height: 350px;
+                display: inline-block;
+                position: relative;
+                padding: 25px;
+                margin: 40px;
+                bottom: 270px;
+                left: 100px;        
+            }
+
+
+           #carros #botao{
+                width: 140px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                
+                position: fixed;
+                width: 30px;
+                left: 1068px;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 230px;
+                left: -280px;
+            }
+
+            #sobre_nos {
+                width: 850px;
+                height: 520px;
+                position: relative;
+                bottom: 250px;
+                left: 150px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -655px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 680px;
+                height: 260px;
+                left: 80px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 190px;
+            }
+
+            #contato {
+                width: 680px;
+                height: 260px;
+                position: relative;
+                top: 500px;
+                left: 380px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 350px;
+                position: relative;
+                top: -600px;
+                left: 60px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: -30px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 130px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 1250px;
+                height: 300px;
+                position: relative;
+                top: 110px;
+                left: -80px;
+            }
+
+            #rodape {
+                width: 900px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                top: 60px;
+                left: 120px;
+            }
+    }  
+
+    /* Telas de Desktops */
+    @media (min-width: 1200px) {
+        body{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            width: 1200px;
+            height: 406px;
+            }
+    
+           .logo {  
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -266px;
+            left: -40px;
+           }
+                #banner {
+                    visibility: visible;
+                    width: 890px;
+                    height: 600px;
+                    left: 125px;
+                    top: -10px;
+                   
+                        }
+    
+                .botoes #esquerdo {
+                    visibility: visible;
+                    width: 80px;
+                    position: relative;
+                    left: -40px;
+                    bottom: 350px;
+                }
+
+                .botoes #direito {
+                    visibility: visible;
+                    width: 80px;
+                    position: relative;
+                    left: 865px;
+                    bottom: 350px;
+                }
+    
+             #menu {
+                width: 1250px;
+                font-size: 10px;
+                position: relative;
+                left: -55px;
+                text-align: left;
+        
+             }
+
+            #menu-texto {
+                position: relative;
+                left: -130px;
+            }            
+            
+            #cadastro {
+                visibility: visible;
+                font-size: 15px;
+                width: 139px;
+                height: 50px;
+                left: 880px;
+                top: -160px;
+                display: flex;
+                align-items: center;
+            }
+            #login {
+                visibility: visible;
+                font-size: 15px;
+                width: 100px;
+                height: 50px;
+                left: 765px;
+                top: -110px;
+                display: flex;
+                align-items: center;
+            }
+
+             #slogan {
+                position: relative;
+                bottom: -20px;
+                left:  225px;
+                width: 550px;
+                text-align:left;
+                font-size: 50px;
+             }
+    
+            #pesquisa {
+                width: 750px;
+                height: 40px;
+                position: relative;
+                left: 95px;
+                top: 30px;
+                z-index: 99999;
+            }
+
+            input {
+                width: 600px;
+                position: relative;
+                left: -60px;
+            }
+
+           #pesquisa button {
+                width: 120px;
+                height: 50px;
+                position: relative;
+                left: 305px;
+                top: -100px;
+            }
+
+            #catalogo {
+                width: 392px;
+                height: 350px;
+                display: inline-block;
+                position: relative;
+                padding: 25px;
+                margin: 40px;
+                bottom: 80px;
+                left: 10px;        
+            }
+
+
+           #carros #botao{
+                width: 140px;
+                height: 50px;
+                padding: 10px;
+                position: relative;
+                top: 360px;
+            }
+
+            .carros:hover {
+                z-index:9999;
+                transform: scale(1.05);
+            }
+                
+            .carros:after {
+                transform: scale(0.50);
+            }
+
+            #inicio {
+                
+                position: fixed;
+                width: 30px;
+                left: 1010px;
+            }
+
+            #titulo-catalogo {
+                position: relative;
+                bottom: 50px;
+                left: -280px;
+            }
+
+            #sobre_nos {
+                width: 850px;
+                height: 520px;
+                position: relative;
+                bottom: 80px;
+                left: 70px;
+            }
+
+            #sobre_nos img {
+                width: 150px;
+                height: 150px;
+                left: -655px;
+                top: -90px;
+            }
+
+            #sobre_nos p {
+                width: 680px;
+                height: 260px;
+                left: 80px;
+                top: -60px;
+                overflow: hidden;
+            }
+
+            #sobre_nos h3 {
+                width: 400px;
+                position: relative;
+                top: 35px;
+                left: 190px;
+            }
+
+            #contato {
+                width: 680px;
+                height: 260px;
+                position: relative;
+                top: 650px;
+                left: 300px;
+            }
+
+            #contato h3 {
+                width: 550px;
+                font-size: 35px;
+                position: relative;
+                top: -640px;
+                left: -40px;
+            }
+
+            #contato input {
+                width: 350px;
+                position: relative;
+                top: -600px;
+                left: 60px;
+            }
+
+            #contato label {
+                font-size: 15px;
+                font-weight: bold;
+                width: 200px;
+                position: relative;
+                top: -560px;
+                left: -30px;
+            }
+
+            #contato #enviar {
+                width: 200px;
+                position: relative;
+                top: -550px;
+                left: 130px;
+            }
+
+            #contato #mensagem {
+                font-size: 20px;
+                width: 300px;
+                position: relative;
+                left: 50px;
+            }
+
+            #footer {
+                width: 1175px;
+                height: 300px;
+                position: relative;
+                left: -80px;
+                bottom: -250px;
+            }
+
+            #rodape {
+                width: 900px;
+                height: 200px;
+                font-size: 30px;
+                position: relative;
+                top: 50px;
+                left: 120px;
+            }
+        
     }

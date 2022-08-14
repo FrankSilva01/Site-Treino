@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rápidão AutoShop</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css" media="all">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap');
     </style> 
@@ -19,7 +19,7 @@
  <div id="menu">
 
 
-    <label for="menu"class="menu-texto">
+    <label for="menu"class="menu-texto" id="menu-texto">
       <ul>
     <li> <a href="#"> Inicio </a></li>
     <li><a href="#catalogo"> Catalogo</a> </li>
@@ -30,18 +30,18 @@
 
     </div>
 
-    <div class="login" ><a href="./Tela-de-login-main/telaLogin.html">
+    <div class="login" id="login"><a href="./Tela-de-login-main/telaLogin.html">
         Login</a>
     </div>
 
-    <div class="cadastro"> Cadastre-se</div>
+    <div class="cadastro" id="cadastro"> Cadastre-se</div>
 
  </div>
  
- <div class="logo"> <a href="#menu">  <img src="https://thumbs.dreamstime.com/b/o-auto-projeto-do-logotipo-do-concession%C3%A1rio-autom%C3%B3vel-com-conceito-ostenta-silhueta-do-ve%C3%ADculo-86237773.jpg"
+ <div class="logo" id="logo"> <a href="#menu">  <img src="https://thumbs.dreamstime.com/b/o-auto-projeto-do-logotipo-do-concession%C3%A1rio-autom%C3%B3vel-com-conceito-ostenta-silhueta-do-ve%C3%ADculo-86237773.jpg"
   width="150" height="150"></a></div>   
 
-  <div class="slogan">Realize o seu sonho</div>
+  <div class="slogan" id="slogan">Realize o seu<span id="fraseDestaque">sonho!</span> </div>
 
   
 
@@ -61,7 +61,7 @@
 
           
 
-          <div class="botoes" >
+          <div class="botoes" id="botoes">
          
             <button type="button" id="esquerdo"onclick=trocar(); ><img src="./previous.png" width="60px" height="60px"></button>
   
@@ -69,114 +69,76 @@
 
     </div>
 
-    
-
     </div>
 
-    <div class="pesquisa">
+    <div class="pesquisa" id="pesquisa">
         <input type="text" placeholder="Encontre o seu próximo sonho">
         <button> Pesquisar</button>
     </div>             
 
-              <label for="catalogo"><h1>Catálogo</h1></label>
-
-
+              
+    <label for="catalogo" id="titulo-catalogo"><h1>Catálogo</h1></label>
                <div id="catalogo">
-            
-                 <div class="carros" >
+    
+                 <div class="carros" id="carros">
 
               <img src="https://c8y3s8d4.stackpathcdn.com/wp-content/uploads/2016/05/mercedes-carro.jpg" width="450" height="350px"  name="carros"> 
 
-              <button class="botao" onclick=tested() >Comprar</button>
+              <button class="botao" id="botao" onclick=tested() >Comprar</button>
             </div>
 
-            <div class="carros">
+            <div class="carros"  id="carros">
               <img src="https://i.pinimg.com/736x/81/48/0a/81480af52dae91e986896ec1757a1385--pastas-novo-design.jpg" width="450" height="350">
 
-              <button class="botao">Comprar</button>
+              <button class="botao" id="botao">Comprar</button>
             </div>
 
-            <div class="carros">
+            <div class="carros"  id="carros">
 
               <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/10/Chevrolet-Onix-Plus.jpg?w=1200&h=675&crop=1" width="450" height="350">
 
-              <button class="botao">Comprar</button>
+              <button class="botao" id="botao">Comprar</button>
             </div>
 
-              <div class="carros">
+              <div class="carros"  id="carros">
 
               <img src="https://reviewauto.com.br/wp-content/uploads/2022/05/Honda-Civic-usado.jpg" width="450" height="350"> 
 
-              <button class="botao">Comprar</button>
+              <button class="botao" id="botao">Comprar</button>
             </div>
-
            
-
             </div>   
 
             <div id="catalogo">
 
-                <div class="carros">
+                <div class="carros"  id="carros">
                   <img src="https://s2.glbimg.com/yKgidjKptWWKNTEwoUQhwKmIKug=/0x0:1280x720/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/C/n/soYe97TW2gqUJaODLU9g/maxresdefault-6-.jpg" width="450" height="350">
     
-                  <button class="botao">Comprar</button>
+                  <button class="botao" id="botao">Comprar</button>
                 </div>
     
-                <div class="carros">
+                <div class="carros"  id="carros">
                     
                   <img src="https://s3-sa-east-1.amazonaws.com/revista.mobiauto/ImagensSUVs/Carros+que+inacreditavelmente+custam+mais+de+R%24+100+mil/Carros-que-inacreditavelmente-est%C3%A3o-custando-mais-de-100-mil-Renault-Captur.jpg" width="450" height="350">
     
-                  <button class="botao">Comprar</button>
+                  <button class="botao" id="botao">Comprar</button>
                 </div>
     
-                  <div class="carros">
+                  <div class="carros"  id="carros">
                  
                   <img src="https://automotivoshopping.com.br/wp-content/uploads/2019/04/Carros-usados-para-viajar-849x566.jpg" width="450" height="350"> 
     
-                  <button class="botao">Comprar</button>
+                  <button class="botao" id="botao">Comprar</button>
                 </div>
     
-                <div class="carros">
+                <div class="carros"  id="carros">
 
                   <img src="https://quatrorodas.abril.com.br/wp-content/uploads/2019/03/vw-t-cross-3-e1590082086993.jpg?quality=70&strip=info" width="450" height="350"> 
     
-                  <button class="botao">Comprar</button>
+                  <button class="botao" id="botao">Comprar</button>
+                </div>      
                 </div>
-                
-    
-                </div>
-
-                        
-               <div id="catalogo"  >
-
-                <div class="carros">
-                  <img src="https://blog.olhovivovistorias.com.br/wp-content/uploads/2021/04/original-d246d02e06a2bf6532c361f6689d605d.jpeg" width="450" height="350">
-    
-                  <button class="botao">Comprar</button>
-               
-                </div>
-    
-                <div class="carros">
-    
-                  <img src="https://garagem360.com.br/wp-content/uploads/2021/08/ALTA20-1.jpeg" width="450" height="350" >
-    
-                  <button class="botao">Comprar</button>
-                  
-                </div>
-
-                <div class="carros">
-    
-                  <img src="https://motorshow.com.br/wp-content/uploads/sites/2/2020/01/11_ms431_logan1.jpg" width="450" height="350" >                  
-                  <button class="botao">Comprar</button>
-            
-                    </div>       
-                    
-                    <div class="carros">
-    
-                      <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3121042:1628606599/Up.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=15f4980" width="450" height="350" >                  
-                      <button class="botao">Comprar</button>
-                
-                        </div>  
+           
 
                 </div>
 
@@ -194,7 +156,7 @@
                           um novo significado para a tecnologia e mobilidade. <br>
                           Porque, para nós, 
                           tecnologia e mobilidade tem tudo a ver com liberdade. 
-                          É poder chegar aonde você quer da maneira mais prática e segura possível. <br>
+                          É poder chegar aonde você quer, da maneira mais prática e segura possível. <br>
                           Nós adoramos essa liberdade, mas também entendemos que ela possui diferentes significados para cada um. <br> Por isso, 
                           nossa missão é oferecer a você a melhor opção para estar ao seu lado no caminho que você escolher.
                           Desde sempre cuidamos do caminho de milhões de pessoas. <br>
@@ -203,40 +165,27 @@
                           soluções em tecnologia e mobilidade do Brasil.</p>
 
                 </div>
-
                 
-                    <div id="contato">
-
+                  <div id="contato">
                       <h3>Entre em contato conosco</h3>
 
                     <label for="input" class="informacoes">Nome:</label>
-                    
-                           <input type="text" id="nome" placeholder="Digite o seu nome" minlength="1" maxlength="35" >
-
+                           <input type="text" id="nome" placeholder="Digite o seu nome" minlength="1" maxlength="35" required="true" />
                                 <label for="input" class="informacoes">E-mail:</label>
-
-                                  <input type="text" id="e-mail" placeholder="Digite o seu e-mail" minlength="1" maxlength="35">
-                                  
-                                   <label for="email" class="informacoes">Telefone:</label>
-
-                             <input type="phone" id="telefone" placeholder="Digite o seu Telefone" minlength="11" maxlength="11" >
-                       
-                      <button type="submit" id="enviar"  onclick=valida_form();>Enviar</button>
-
-                      <label for="enviar" id="mensagem" ></label>
-
-                     
+                                  <input type="email" id="e-mail" placeholder="Digite o seu e-mail" minlength="1" maxlength="35" required="true">
+                                <label for="email" class="informacoes">Telefone:</label>
+                             <input type="phone" id="telefone" placeholder="Digite o seu Telefone" minlength="11" maxlength="11" required="true"> 
+                        <button type="submit" id="enviar"  onclick=valida_form();>Enviar</button>
+                    <label for="enviar" id="mensagem" ></label>         
 
                     </div>
 
 
             
             <div id="footer" onscroll=rodape();>
-              <p class="rodape">Rapidão AutoShop todos os direitos reservados</p>
+              <p class="rodape" id="rodape">Rapidão AutoShop todos os direitos reservados</p>
 
             </div>
-            
-            
             
             </div>
 

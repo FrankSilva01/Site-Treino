@@ -46,6 +46,7 @@ p {
 #fraseDestaque {
     font-weight: bold;
     color: rgb(74, 203, 246);
+    padding-left: 10px;
 }
 
 #menu a {

@@ -1,4 +1,3 @@
-
         
          let currentImgIndex =1;
          let ImgSrcArray = [ //caminho das suas imgs aqui
@@ -28,32 +27,66 @@
 
     // VALIDAÇÃO SE OS CAMPOS DO FORMULARIO ESTAO PREENCHIDOS
 
+    // Criação de um objeto chamado pessoa com as informações dos inputs nome, email e telefone
+    let pessoa = {
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("e-mail").value,
+        telefone: document.getElementById("telefone").value
+    };
+    
+    // Armazenando as informações do objeto pessoa no localStorage
+    localStorage.setItem('pessoa', JSON.stringify(pessoa));
+        let pessoaString = localStorage.getItem('pessoa');
+        let pessoaObj = JSON.parse(pessoaString);
+
+// Validação do formulário para verificar se os campos estão brancos ou não e se já existe algum nome, telefone e email igual a esse registrado no local storage
     function valida_form (){   
 
-        if(document.getElementById("nome").value ==""){
+        if(document.getElementById("nome").value =="")
+        {
         alert('Por favor, preencha o campo *Nome');
         document.getElementById("nome").focus();
         return false
-        }  
-        
-            else if (document.getElementById("e-mail").value ==""){
+        }  else if 
+            (document.getElementById("nome").value === pessoa.nome)
+                {
+                alert('Este nome já esta em uso');
+                document.getElementById("nome").focus();
+                return false
+        }
+     
+            else if (document.getElementById("e-mail").value =="")
+            {
             alert('Por favor, preencha o campo *E-mail');
             document.getElementById("e-mail").focus();
             return false
         }
-
-        else if (document.getElementById("telefone").value ==""){
+            else if  (document.getElementById("e-mail").value === pessoa.email)
+            {
+            alert('Este e-mail já esta cadastrado');
+            document.getElementById("e-mail").focus();
+            return false
+}
+        else if (document.getElementById("telefone").value =="")
+        {
             alert('Por favor, preencha o campo *Telefone');
             document.getElementById("telefone").focus();
             return false
+        }   
+        else if (document.getElementById("telefone").value === pessoa.telefone)
+        {
+            alert('Telefone já cadastrado');
+            document.getElementById("telefone").focus();
+            return false
+        }  
+        else 
+        {  
+            document.getElementById('mensagem').innerHTML = `Obrigado pelo envio 
+            ${nome} em breve faremos contato pelo e-mail: ${email}`
+            
+         }     
+       
         }
-        
-        
-        else {  
-            document.getElementById('mensagem').innerHTML = `Obrigado pelo envio ${nome} em breve faremos contato pelo e-mail: ${email}`  
-                        }     
-        }
-
 
     // FUNÇÃO PARA TROCAR A COR DO RODAPÉ QUANDO O SCROLL CHEGAR NELE
         window.onscroll = function() {
@@ -71,6 +104,3 @@
 
           prevScrollpos = currentScrollPos;
           };    
-
-
-     
